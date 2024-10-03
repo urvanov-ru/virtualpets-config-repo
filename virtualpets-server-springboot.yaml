@@ -1,20 +1,9 @@
-    
 virtualpets-server-springboot:
+  play:
+    url: http://localhost:8081
   version: 0.21
-  servers:
+  server:
    - url: http://localhost:8080
-     name: Русскоязычный основной
-     locale: ru
-   - url: broken_test
-     name: broken_test
-     locale: broken_test
-   - url: TEST_CLOUD
-     name: TEST_CLOUD
-     locale: TEST_CLOUD
-
-
-
-
-
-
-
+  mail:
+    from: springcloudmailfrom
+    subject: Spring cloud mail subject
